@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Honnens Design</title>
+<link rel="stylesheet" href="css/normalize.css" />
+<link rel="stylesheet" href="css/foundation.css" />
+<link rel="stylesheet" href="css/custom.css" />
+</head>
+
+<body>
+<nav id="menu"> <a href="#menu" class="menu-link"></a>
+  <ul>
+    <span><a href="#">Title</a></span>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+    <li><a href="#">Blog</a></li>
+  </ul>
+</nav>
+<div class="container">
+
+<section>
+  <div class="row">
+    <div class="small-4 columns small-centered margin-top"><img src="http://placehold.it/350x150" alt="img"/></div>
+  </div>
+  <div class="row">
+    <p class="small-8 columns small-centered margin-top">Nec ei scripta placerat, mei ex doamet, te exerci abhorreant pro, mazim vituperatoribus te usu. Inani vivendo voluptatum an nam, mutat patrioque gloria
+      tur ne eum, ea vivendo suscipit vix. Usu id dolore vocent saplor soleat. </p>
+  </div>
+  </section>
+  <section>
+    <div class="row margin-top">
+      <div class="small-4 columns"><img src="http://placehold.it/305x270" alt="img"/></div>
+      <div class="small-3 columns"><img src="http://placehold.it/214x270" alt="img"/></div>
+      <div class="small-5 columns"><img src="http://placehold.it/394x270" alt="img"/></div>
+    </div>
+    <div class="row margin-top">
+      <div class="small-8 columns"><img src="http://placehold.it/664x338" alt="img"/></div>
+      <div class="small-4 columns"><img src="http://placehold.it/305x338" alt="img"/></div>
+    </div>
+    <div class="row margin-top">
+      <div class="small-6 columns"><img src="http://placehold.it/485x600" alt="img"/></div>
+      <div class="small-6 columns"><img src="http://placehold.it/484x300" alt="img"/></div>
+      <div class="small-3 columns margin-top"><img src="http://placehold.it/214x248" alt="img"/></div>
+      <div class="small-3 columns margin-top"><img src="http://placehold.it/214x248" alt="img"/></div>
+    </div>
+  
+  </section>
+  </div>
+</body>
+<script src="js/vendor/modernizr.js"></script>
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation/foundation.js"></script>
+<script>
+$(".menu-link").click(function(){
+      $("#menu").toggleClass("active");
+      $(".container").toggleClass("active");
+});
+</script>
+</html>
