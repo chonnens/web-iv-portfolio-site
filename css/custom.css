@@ -5,6 +5,14 @@
 margin-top:1.6rem;	
 }
 
+
+.margin-top{
+margin-top:3rem;	
+}
+
+.no-padding-left{
+padding-left:0;	
+}
    
    #menu {
          position: fixed;
