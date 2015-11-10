@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.margin-top {
-margin-top:3rem;	
+#works div {
+margin-top:1.6rem;	
 }
 
    
@@ -68,4 +68,10 @@ margin-top:3rem;
     -moz-transition: opacity 0.15s ease;
     -o-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease;
+}
+
+.overflow {
+max-height:300px;
+overflow:hidden;
+background-color:red;
 }

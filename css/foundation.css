@@ -137,7 +137,7 @@ select {
     margin-left: 0;
     margin-right: 0; }
   .row .row {
-    margin: 0 -1.6rem;
+    margin: 0 -.9875rem;
     max-width: none;
     width: auto; }
     .row .row:before, .row .row:after {
@@ -157,8 +157,8 @@ select {
 
 .column,
 .columns {
-  padding-left: 1.6rem;
-  padding-right: 1.6rem;
+  padding-left: .9875rem;
+  padding-right: .9875rem;
   width: 100%;
   float: left; }
 
@@ -299,8 +299,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; }
 
   .small-1 {
@@ -415,8 +415,8 @@ select {
     margin-right: 0; }
   .row.small-uncollapse > .column,
   .row.small-uncollapse > .columns {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; } }
 @media only screen and (min-width: 40.0625em) {
   .medium-push-0 {
@@ -542,8 +542,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; }
 
   .medium-1 {
@@ -658,8 +658,8 @@ select {
     margin-right: 0; }
   .row.medium-uncollapse > .column,
   .row.medium-uncollapse > .columns {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; }
 
   .push-0 {
@@ -905,8 +905,8 @@ select {
   .column,
   .columns {
     position: relative;
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; }
 
   .large-1 {
@@ -1021,8 +1021,8 @@ select {
     margin-right: 0; }
   .row.large-uncollapse > .column,
   .row.large-uncollapse > .columns {
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
+    padding-left: .9875rem;
+    padding-right: .9875rem;
     float: left; }
 
   .push-0 {
@@ -1169,7 +1169,7 @@ select {
         background: #e3e3e3; }
     .accordion .accordion-navigation > .content, .accordion dd > .content {
       display: none;
-      padding: 1.6rem; }
+      padding: .9875rem; }
       .accordion .accordion-navigation > .content.active, .accordion dd > .content.active {
         background: #FFFFFF;
         display: block; }
