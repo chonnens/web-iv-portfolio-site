@@ -78,8 +78,28 @@ padding-left:0;
     transition: opacity 0.15s ease;
 }
 
+
+
+
+
+@media only screen and (max-width: 40em) { } /* small and up */
+
+@media only screen and (min-width: 40.063em) {  /* min-width 641px, medium and up screens */
+	
 .overflow {
 max-height:300px;
 overflow:hidden;
 background-color:red;
 }
+ } 
+
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* medium only */
+
+@media only screen and (min-width: 64.063em) { } /* large screens and up */
+
+@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /*large only */
+
+@media only screen and (min-width: 90.063em) { } /*XL and up */
+
+@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* XL ONLY */
+
