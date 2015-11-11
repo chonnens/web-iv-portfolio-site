@@ -1,6 +1,16 @@
 @charset "UTF-8";
 /* CSS Document */
 
+
+/* Typography */
+
+p {
+font-size:.9rem;	
+}
+
+
+/* Alignment */
+
 #works div:nth-child(n+4) {
 margin-top:1.6rem;	
 }
@@ -10,11 +20,6 @@ margin-top:1.6rem;
 margin-top:3rem;	
 }
 
-p {
-font-size:.9rem;	
-}
-
-
 .margin-top-section{
 margin-top:8rem;	
 }
@@ -23,6 +28,13 @@ margin-top:8rem;
 padding-left:0;	
 }
    
+   
+footer {
+background-color:blue;
+height:50px;	
+}
+   
+/* Navigation */
    #menu {
          position: fixed;
          top: 0;
@@ -85,12 +97,6 @@ padding-left:0;
     -moz-transition: opacity 0.15s ease;
     -o-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease;
-}
-
-
-footer {
-background-color:blue;
-height:50px;	
 }
 
 
