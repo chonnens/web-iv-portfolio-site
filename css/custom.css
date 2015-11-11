@@ -1,13 +1,22 @@
 @charset "UTF-8";
 /* CSS Document */
 
-#works div {
+#works div:nth-child(n+4) {
 margin-top:1.6rem;	
 }
 
 
 .margin-top{
 margin-top:3rem;	
+}
+
+p {
+font-size:.9rem;	
+}
+
+
+.margin-top-section{
+margin-top:8rem;	
 }
 
 .no-padding-left{
@@ -79,18 +88,25 @@ padding-left:0;
 }
 
 
+footer {
+background-color:blue;
+height:50px;	
+}
 
 
+@media only screen and (max-width: 40em) { 
 
-@media only screen and (max-width: 40em) { } /* small and up */
+#third-image {
+margin-top:1.6rem;	} /* small and up */
+}
 
 @media only screen and (min-width: 40.063em) {  /* min-width 641px, medium and up screens */
 	
 .overflow {
 max-height:300px;
 overflow:hidden;
-background-color:red;
 }
+
  } 
 
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* medium only */
