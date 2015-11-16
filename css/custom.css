@@ -2,170 +2,203 @@
 /* CSS Document */
 
 
-/* Typography */
+/* TABLE OF CONTENTS
+
+	1. Typography
+	2. Alignment
+	3. List Elements
+	4. Navigation
+	5. Misc.
+	6. Media Queries
+
+ */
+
+
+/* 1. Typography */
 
 p {
-font-size:.9rem;	
+	font-size: .9rem;
 }
 
-/* Alignment */
 
-li{
-list-style:none;
+
+/* 2. Alignment */
+
+h1 {
+	margin: 15rem 0 3rem 0;
 }
-	ul {
-		
-	margin:0;	
-	}
+
+#skills div {
+	margin-top: 3rem;
+}
+
+#works div:nth-child(n+4) {
+	margin-top: 1.6rem;
+}
+
+#skills p {
+margin-top:1rem;	
+}
+
+footer, #intro div img, #works>div, #project-intro h1, #viewmore .row {
+	margin-top: 7.5rem;
+}
+
+#about-project p {
+	margin-bottom: 5rem;
+}
+
+#project-intro div:not(:first-child) {
+	margin-bottom: 2rem;
+}
+
+#viewmore img {
+	padding: 10px;
+}
+
+
+
+/* 3. List Elements */
+
+
+li {
+	list-style: none;
+}
+
+ul {
+	margin: 0;
+}
 
 footer li {
-display:inline-block;	
+	display: inline-block;
 }
 
 footer li:not(:last-child) {
-margin-right:50px;	
-}
-#works div{
-     -moz-transition: all .5s linear;
-     -webkit-transition: all .5s linear;
-     transition: all .5s linear;
-}
-.logo {
-z-index:10000;	
-}
-#works div:nth-child(n+4) {
-margin-top:1.6rem;	
+	margin-right: 50px;
 }
 
-.small-top-padding {
-padding-top:15px;
-}
 
-.margin-top{
-margin-top:3rem;	
-}
 
-.margin-top-section{
-margin-top:8rem;	
-}
+/* 4. Navigation */
 
-.no-padding-left{
-padding-left:0;	
-}
-   
-   
-footer {
-background-color:lightgrey;
-height:60px;	
-}
-   
-/* Navigation */
-   #menu {
-         position: fixed;
-         top: 0;
-         bottom: 0;
-         width: 13.755em;
-         right: -13.755em;
-         height: 100%;
-         -webkit-transform: translate(0px, 0px);
-        -moz-transform: translate(0px, 0px);
-        -o-transform: translate(0px, 0px);
-        -ms-transform: translate(0px, 0px);
-        transform: translate(0px, 0px);
-        -webkit-transition: 0.15s ease;
-        -moz-transition: 0.15s ease;
-        -o-transition: 0.15s ease;
-        transition: 0.15s ease;
-		z-index:1000;
+#menu {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 13.755em;
+	right: -13.755em;
+	height: 100%;
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
+	z-index: 1000;
 }
 
 #menu.active {
-        -webkit-transform: translate(-13.755em, 0px);
-        -moz-transform: translate(-13.755em, 0px);
-        -o-transform: translate(-13.755em, 0px);
-        -ms-transform: translate(-13.755em, 0px);
-        transform: translate(-13.755em, 0px);
+	-webkit-transform: translate(-13.755em, 0px);
+	-moz-transform: translate(-13.755em, 0px);
+	-o-transform: translate(-13.755em, 0px);
+	-ms-transform: translate(-13.755em, 0px);
+	transform: translate(-13.755em, 0px);
 }
 
 .container {
-       -webkit-transform: translate(0px, 0px);
-       -moz-transform: translate(0px, 0px);
-       -o-transform: translate(0px, 0px);
-       -ms-transform: translate(0px, 0px);
-       transform: translate(0px, 0px);
-       -webkit-transition: 0.15s ease;
-       -moz-transition: 0.15s ease;
-       -o-transition: 0.15s ease;
-       transition: 0.15s ease;  
+	-webkit-transform: translate(0px, 0px);
+	-moz-transform: translate(0px, 0px);
+	-o-transform: translate(0px, 0px);
+	-ms-transform: translate(0px, 0px);
+	transform: translate(0px, 0px);
+	-webkit-transition: 0.15s ease;
+	-moz-transition: 0.15s ease;
+	-o-transition: 0.15s ease;
+	transition: 0.15s ease;
 }
 
 .container.active {
-       -webkit-transform: translate(-13.725em, 0px);
-       -moz-transform: translate(-13.725em, 0px);
-       -o-transform: translate(-13.725em, 0px);
-       -ms-transform: translate(-13.725em, 0px);
-       transform: translate(-13.725em, 0px);
+	-webkit-transform: translate(-13.725em, 0px);
+	-moz-transform: translate(-13.725em, 0px);
+	-o-transform: translate(-13.725em, 0px);
+	-ms-transform: translate(-13.725em, 0px);
+	transform: translate(-13.725em, 0px);
 }
-
 
 .menu-link {
-    position: absolute;
-    top: 15px;
-    left: -50px;
-    height: 35px;
-    width: 35px;
-    background: url('../../../../../../Desktop/logo14.jpg') rgba(0,0,0,0.3) no-repeat;
-    background-position: center center;
-    background-size: 50%;
-    opacity: 0.9;
-    -webkit-transition: opacity 0.15s ease;
-    -moz-transition: opacity 0.15s ease;
-    -o-transition: opacity 0.15s ease;
-    transition: opacity 0.15s ease;
+	position: absolute;
+	top: 15px;
+	left: -50px;
+	height: 35px;
+	width: 35px;
+	background: rgba(0,0,0,0.3) no-repeat;
+	background-position: center center;
+	background-size: 50%;
+	opacity: 0.9;
+	-webkit-transition: opacity 0.15s ease;
+	-moz-transition: opacity 0.15s ease;
+	-o-transition: opacity 0.15s ease;
+	transition: opacity 0.15s ease;
 }
 
 
-@media only screen and (max-width: 40em) { 
 
-#third-image {
-margin-top:1.6rem;	} /* only small */
 
-.small-top-margin {
-margin-top:2.5rem;	
+/* 5. Misc. */
+
+#works div {
+	-moz-transition: all .5s linear;
+	-webkit-transition: all .5s linear;
+	transition: all .5s linear;
 }
 
-.smaller-top-margin {
-margin-top:1rem;	
+.logo {
+	z-index: 10000;
 }
-footer div {
-text-align:center;	
-}
-
 
 footer {
-height:100px;	
+	background-color: lightgrey;
+	height: 60px;
+	padding-top: 15px;
+}
+
+
+
+
+/* 6. Media Queries */
+
+
+@media only screen and (max-width: 40em) { /* only small */
+#third-image {
+	margin-top: 1.6rem;
+}
+
+.small-screen-top-margin {
+	margin-top: 1rem;
+}
+
+footer {
+	height: 100px;
+}
+
+#project-intro h1 {
+	margin: 5rem 0 3rem 0;
 }
 }
 
 @media only screen and (min-width: 40.063em) {  /* min-width 641px, medium and up screens */
-	
 .overflow {
-max-height:300px;
-overflow:hidden;
+	max-height: 300px;
+	overflow: hidden;
 }
 
-footer ul {
-float:right;	
+#tall-works-image {
+max-height:589px;
+overflow:hidden;	
 }
- } 
+}
 
-@media only screen and (min-width: 40.063em) and (max-width: 64em) { } /* medium only */
-
-@media only screen and (min-width: 64.063em) { } /* large screens and up */
-
-@media only screen and (min-width: 64.063em) and (max-width: 90em) { } /*large only */
-
-@media only screen and (min-width: 90.063em) { } /*XL and up */
-
-@media only screen and (min-width: 90.063em) and (max-width: 120em) { } /* XL ONLY */
 
