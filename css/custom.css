@@ -1,7 +1,6 @@
-@charset "UTF-8";
+@charset  "UTF-8";
+
 /* CSS Document */
-
-
 /* TABLE OF CONTENTS
 
 	1. Typography
@@ -12,197 +11,182 @@
 	6. Media Queries
 
  */
-
-
+ 
+ 
 /* 1. Typography */
-
 p {
-	font-size: .9rem;
+    font-size: .9rem;
 }
-
 
 
 /* 2. Alignment */
-
 h1 {
-	margin: 15rem 0 3rem 0;
+    margin: 15rem 0 3rem;
 }
 
-#skills div, #viewmore .row {
-	margin-top: 3rem;
+#skills div,#viewmore .row {
+    margin-top: 3rem;
 }
 
 #works div:nth-child(n+4) {
-	margin-top: 1.6rem;
+    margin-top: 1.6rem;
 }
 
 #skills p {
-	margin-top:1rem;	
+    margin-top: 1rem;
 }
 
-footer, #intro div img, #works>div, #project-intro h1 {
-	margin-top: 7.5rem;
+footer,#intro div img,#works>div,#project-intro h1 {
+    margin-top: 7.5rem;
 }
 
 #about-project p {
-	margin-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 #project-intro div:not(:first-child) {
-	margin-bottom: 2rem;
+    margin-bottom: 2rem;
 }
 
 #viewmore img {
-	padding: 10px;
+    padding: 10px;
 }
-
 
 
 /* 3. List Elements */
-
-
 li {
-	list-style: none;
+    list-style: none;
 }
 
 ul {
-	margin: 0;
+    margin: 0;
 }
 
 footer li {
-	display: inline-block;
+    display: inline-block;
 }
 
 footer li:not(:last-child) {
-	margin-right: 50px;
+    margin-right: 50px;
 }
-
 
 
 /* 4. Navigation */
-
 #menu {
-	position: fixed;
-	top: 0;
-	bottom: 0;
-	width: 13.755em;
-	right: -13.755em;
-	height: 100%;
-	-webkit-transform: translate(0px, 0px);
-	-moz-transform: translate(0px, 0px);
-	-o-transform: translate(0px, 0px);
-	-ms-transform: translate(0px, 0px);
-	transform: translate(0px, 0px);
-	-webkit-transition: 0.15s ease;
-	-moz-transition: 0.15s ease;
-	-o-transition: 0.15s ease;
-	transition: 0.15s ease;
-	z-index: 1000;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 13.755em;
+    right: -13.755em;
+    height: 100%;
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition: .15s ease;
+    -moz-transition: .15s ease;
+    -o-transition: .15s ease;
+    transition: .15s ease;
+    z-index: 1000;
 }
 
 #menu.active {
-	-webkit-transform: translate(-13.755em, 0px);
-	-moz-transform: translate(-13.755em, 0px);
-	-o-transform: translate(-13.755em, 0px);
-	-ms-transform: translate(-13.755em, 0px);
-	transform: translate(-13.755em, 0px);
+    -webkit-transform: translate(-13.755em,0px);
+    -moz-transform: translate(-13.755em,0px);
+    -o-transform: translate(-13.755em,0px);
+    -ms-transform: translate(-13.755em,0px);
+    transform: translate(-13.755em,0px);
 }
 
 .container {
-	-webkit-transform: translate(0px, 0px);
-	-moz-transform: translate(0px, 0px);
-	-o-transform: translate(0px, 0px);
-	-ms-transform: translate(0px, 0px);
-	transform: translate(0px, 0px);
-	-webkit-transition: 0.15s ease;
-	-moz-transition: 0.15s ease;
-	-o-transition: 0.15s ease;
-	transition: 0.15s ease;
+    -webkit-transform: translate(0px,0px);
+    -moz-transform: translate(0px,0px);
+    -o-transform: translate(0px,0px);
+    -ms-transform: translate(0px,0px);
+    transform: translate(0px,0px);
+    -webkit-transition: .15s ease;
+    -moz-transition: .15s ease;
+    -o-transition: .15s ease;
+    transition: .15s ease;
 }
 
 .container.active {
-	-webkit-transform: translate(-13.725em, 0px);
-	-moz-transform: translate(-13.725em, 0px);
-	-o-transform: translate(-13.725em, 0px);
-	-ms-transform: translate(-13.725em, 0px);
-	transform: translate(-13.725em, 0px);
+    -webkit-transform: translate(-13.725em,0px);
+    -moz-transform: translate(-13.725em,0px);
+    -o-transform: translate(-13.725em,0px);
+    -ms-transform: translate(-13.725em,0px);
+    transform: translate(-13.725em,0px);
 }
 
 .menu-link {
-	position: absolute;
-	top: 15px;
-	left: -50px;
-	height: 35px;
-	width: 35px;
-	background: rgba(0,0,0,0.3) no-repeat;
-	background-position: center center;
-	background-size: 50%;
-	opacity: 0.9;
-	-webkit-transition: opacity 0.15s ease;
-	-moz-transition: opacity 0.15s ease;
-	-o-transition: opacity 0.15s ease;
-	transition: opacity 0.15s ease;
+    position: absolute;
+    top: 15px;
+    left: -50px;
+    height: 35px;
+    width: 35px;
+    background: rgba(0,0,0,0.3) no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    opacity: .9;
+    -webkit-transition: opacity .15s ease;
+    -moz-transition: opacity .15s ease;
+    -o-transition: opacity .15s ease;
+    transition: opacity .15s ease;
 }
-
-
 
 
 /* 5. Misc. */
-
 #works div {
-	-moz-transition: all .5s linear;
-	-webkit-transition: all .5s linear;
-	transition: all .5s linear;
+    -moz-transition: all .5s linear;
+    -webkit-transition: all .5s linear;
+    transition: all .5s linear;
 }
 
 a:hover {
-	opacity:.5;
+    opacity: .5;
 }
 
 .logo {
-	z-index: 10000;
+    z-index: 10000;
 }
 
 footer {
-	background-color: lightgrey;
-	height: 60px;
-	padding-top: 15px;
+    background-color: #d3d3d3;
+    height: 60px;
+    padding-top: 15px;
 }
-
-
 
 
 /* 6. Media Queries */
-
-
 @media only screen and (max-width: 40em) { /* only small */
+
 #third-image {
-	margin-top: 1.6rem;
+    margin-top: 1.6rem;
 }
 
 .small-screen-top {
-	margin-top: 1rem;
+    margin-top: 1rem;
 }
 
 footer {
-	height: 100px;
+    height: 100px;
 }
 
 #project-intro h1 {
-	margin: 5rem 0 3rem 0;
+    margin: 5rem 0 3rem;
 }
 }
 
-@media only screen and (min-width: 40.063em) {  /* min-width 641px, medium and up screens */
+@media only screen and (min-width: 40.063em) { /* min-width 641px, medium and up screens */
+
 .overflow {
-	max-height: 300px;
-	overflow: hidden;
+    max-height: 300px;
+    overflow: hidden;
 }
 
 #tall-works-image {
-max-height:589px;
-overflow:hidden;	
+    max-height: 589px;
+    overflow: hidden;
 }
 }
-
-
