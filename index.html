@@ -40,15 +40,23 @@
 <!--2. Works-->
 
 <section id="works">
-  <div class="row margin-top-section">
+  <div class="row">
     <div class="small-6 medium-4 columns"><a href="works-ad-campaign.html"><img src="http://placehold.it/350x350"  class="overflow" alt="img"/></a><p>caption</p></div>
+    
     <div class="small-6 medium-4 columns"><a href="works-ad-campaign.html"><img src="http://placehold.it/350x350" class="overflow" alt="img"/></a><p>caption</p></div>
+    
     <div class="medium-4 columns" id="third-image"><a href="works-ad-campagin.html"><img data-interchange="[http://placehold.it/620x450, (small)], [http://placehold.it/350x350, (medium)]" class="overflow" alt="img"> </a><p>caption</p></div>
+    
     <div class="medium-8 columns"><a href="works-ad-campaign.html"><img data-interchange="[http://placehold.it/620x350, (small)], [http://placehold.it/800x373, (medium)]"  class="overflow" alt="img"> </a><p>caption</p></div>
+    
     <div class="medium-4 columns"><a href="works-ad-campaign.html"><img data-interchange="[http://placehold.it/620x550, (small)], [http://placehold.it/400x400, (medium)]"  class="overflow" alt="img"> </a><p>caption</p></div>
+    
     <div class="medium-6 columns" id="tall-works-image"><a href="works-ad-campaign.html"><img data-interchange="[http://placehold.it/620x750, (small)], [http://placehold.it/485x610, (medium)]" alt="img"> </a><p>caption</p></div>
+    
     <div class="medium-6 columns"><a href="works-ad-campaign.html"><img data-interchange="[http://placehold.it/620x450, (small)], [http://placehold.it/484x300, (medium)]" class="overflow" alt="img"> </a><p>caption</p></div>
+    
     <div class="small-6 medium-3 columns"><a href="works-ad-campaign.html"><img src="http://placehold.it/350x350"  class="overflow" alt="img"/></a><p>caption</p></div>
+    
     <div class="small-6 medium-3 columns"><a href="works-ad-campaign.html"><img src="http://placehold.it/350x350"  class="overflow" alt="img"/></a><p>caption</p></div>
   </div>
 </section>
@@ -87,22 +95,26 @@
       <h1>Let's Get In Touch </h1>
     </div>
     <div class="small-centered medium-10 columns">
-      <form method="post" action="php/contactengine.php">
+      <form>
         <div class="medium-6 columns">
-          <div class="columns ">
-            <input type="text" name="Name" id="Name" placeholder="name:">
+          <div class="columns">
+            <label for="name">Your Name</label>
+            <input type="text" name="Name" id="Name">
           </div>
           <div class="columns">
-            <input type="email" name="Email" id="Email" placeholder="email:">
+              <label for="email">Your Email</label>
+            <input type="email" name="Email" id="Email">
           </div>
           <br>
           <div class="columns">
-            <input type="text" name="Referral" id="Referral" placeholder="how did you hear about us?">
+              <label for="referral">How did you hear about me?</label>
+            <input type="text" name="Referral" id="Referral">
           </div>
         </div>
         <div class="medium-6 columns">
           <div class="columns">
-            <textarea name="Message" id="Message" class="message-box" placeholder="message:"></textarea>
+              <label for="message">You Message</label>
+            <textarea name="Message" id="Message" class="message-box"></textarea>
           </div>
           <br>
           <div class="columns">
@@ -122,7 +134,7 @@
 <footer>
   <div class="row">
   <div class="columns medium-6 small-only-text-center"><a href="mailto:chelseahonnens@gmail.com">chelseahonnens@gmail.com</a></div>
-    <div class="columns medium-6 small-screen-top-margin">
+    <div class="columns medium-6 small-screen-top">
     <ul class="small-only-text-center medium-text-right">
       <li><a href="#works">works</a> </li>
       <li><a href="#about">about</a> </li>
