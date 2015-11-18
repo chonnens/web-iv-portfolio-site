@@ -16,12 +16,39 @@
 /* 1. Typography */
 p {
     font-size: .9rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:200;
+	color:#808285;
+	line-height:1.5rem;
+}
+
+label {
+color:#808285;
+	font-family: 'Work Sans', sans-serif;
+font-weight:200;
+}
+
+textarea{
+height:185px;	
+}
+input:not([type]), input[type="text"], input[type="password"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="month"], input[type="week"], input[type="email"], input[type="number"], input[type="search"], input[type="tel"], input[type="time"], input[type="url"], input[type="color"], textarea {
+border-color:#E55E5D;
+box-shadow:none;	
+}
+footer, h2, h3, h1 {
+color:#56C3D1;
 }
 
 
 /* 2. Alignment */
 h1 {
     margin: 15rem 0 3rem;
+	font-weight: 700;
+}
+
+h1, h2, h3  {
+	font-family: 'Montserrat', sans-serif;
+	
 }
 
 #skills div,#viewmore .row {
@@ -32,7 +59,7 @@ h1 {
     margin-top: 1.6rem;
 }
 
-#skills p {
+#skills p, #menu img {
     margin-top: 1rem;
 }
 
@@ -54,21 +81,56 @@ footer,#intro div img,#works>div,#project-intro h1 {
 
 
 /* 3. List Elements */
-li {
+li{
     list-style: none;
+	display:inline-block;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:300;
+}
+
+footer a  {
+font-family: 'Work Sans', sans-serif;
+	font-weight:300;	
 }
 
 ul {
     margin: 0;
 }
 
-footer li {
+
+footer li:not(:first-child) {
+	margin-left:30px;
+}
+.sliding-u-l-r {
     display: inline-block;
+	color:white;
+}
+.sliding-u-l-r:after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0;
+    background: white;
+    transition: width .3s ease, background-color .3s ease;
+	color:white;
+}
+ 
+.sliding-u-l-r:hover:after {
+    width: 100%;
 }
 
-footer li:not(:last-child) {
-    margin-right: 50px;
+.sliding-u-l-r:active {
+  color:white;
+  opactity:1;
 }
+
+.sliding-u-l-r:hover {
+color:white;
+opacity:1;	
+}
+
+
+
 
 
 /* 4. Navigation */
@@ -89,6 +151,12 @@ footer li:not(:last-child) {
     -o-transition: .15s ease;
     transition: .15s ease;
     z-index: 1000;
+	background-color:#56C3D1;
+	height:400px;
+}
+
+#menu p {
+color:white;	
 }
 
 #menu.active {
@@ -149,12 +217,15 @@ a:hover {
 
 .logo {
     z-index: 10000;
+	margin-top:1rem;
+	width:200px;
 }
 
 footer {
-    background-color: #d3d3d3;
     height: 60px;
     padding-top: 15px;
+	background-color:#56C3D1;
+
 }
 
 
