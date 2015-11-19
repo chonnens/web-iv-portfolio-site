@@ -41,6 +41,16 @@ color:#56C3D1;
 
 
 /* 2. Alignment */
+
+.button-offset{
+margin-top:-58px;	
+}
+
+#top {
+width:100px;	
+margin-top:-10px;
+}
+
 h1 {
     margin: 15rem 0 3rem;
 	font-weight: 700;
@@ -83,6 +93,9 @@ footer,#intro div img,#works>div,#project-intro h1 {
 width:125px;	
 }
 
+#intro img {
+margin-left:-20px;	
+}
 
 /* 3. List Elements */
 li{
@@ -132,10 +145,6 @@ color:white;
 opacity:1;	
 }
 
-
-
-
-
 /* 4. Navigation */
 #menu {
     position: fixed;
@@ -158,6 +167,15 @@ opacity:1;
 	height:400px;
 }
 
+
+#menu:before {
+    content: '';
+    position: absolute;
+    bottom: 0; left: 0;
+    border-bottom: 120px solid white;
+    border-right: 230px solid #56C3D1;
+    width: 0;
+}
 #menu p {
 color:white;	
 }
@@ -196,9 +214,9 @@ color:white;
     left: -50px;
     height: 35px;
     width: 35px;
-    background: rgba(0,0,0,0.3) no-repeat;
+    background:url(../imgs/nav-button.png);
     background-position: center center;
-    background-size: 50%;
+    background-size: 29px;
     opacity: .9;
     -webkit-transition: opacity .15s ease;
     -moz-transition: opacity .15s ease;
@@ -208,6 +226,30 @@ color:white;
 
 
 /* 5. Misc. */
+
+.base {
+    left: 0px;
+    top: 0px;
+    position: relative;
+}
+
+
+.triangle {
+  width:0;
+}
+
+.base:hover .triangle {
+    width: 300px;
+    height: 300px;
+    left: 16px;
+    top: 0px;
+    background: linear-gradient(to right bottom, #E55E5D 50%, transparent 50%);
+    position:absolute;
+    -webkit-transition: width .2s ease-out .2s; /* For Safari 3.1 to 6.0 */
+    transition: width .2s ease-out .2s;
+}
+
+
 #works div {
     -moz-transition: all .5s linear;
     -webkit-transition: all .5s linear;
@@ -222,6 +264,7 @@ a:hover {
     z-index: 10000;
 	margin-top:1rem;
 	width:200px;
+	
 }
 
 footer {
