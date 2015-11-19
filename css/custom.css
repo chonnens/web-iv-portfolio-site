@@ -1,4 +1,4 @@
-@charset  "UTF-8";
+@charset "UTF-8";
 
 /* CSS Document */
 /* TABLE OF CONTENTS
@@ -79,6 +79,10 @@ footer,#intro div img,#works>div,#project-intro h1 {
     padding: 10px;
 }
 
+.icon {
+width:125px;	
+}
+
 
 /* 3. List Elements */
 li{
@@ -121,7 +125,6 @@ footer li:not(:first-child) {
 
 .sliding-u-l-r:active {
   color:white;
-  opactity:1;
 }
 
 .sliding-u-l-r:hover {
