@@ -14,8 +14,27 @@
  
  
 /* 1. Typography */
+
+#works a p {
+	display:inline;
+
+}
+
+#works a:hover p {
+border-bottom:2px solid red;
+}
+
+
 p {
     font-size: .9rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:200;
+	color:#808285;
+	line-height:1.5rem;
+}
+
+span {
+    font-size: .7rem;
 	font-family: 'Work Sans', sans-serif;
 	font-weight:200;
 	color:#808285;
@@ -44,7 +63,7 @@ color:#56C3D1;
 
 
 #top {
-width:100px;	
+width:80px;	
 margin-top:-10px;
 }
 
@@ -58,6 +77,9 @@ h1, h2, h3  {
 	
 }
 
+#works {
+margin-bottom:12rem;	
+}
 #skills div,#viewmore .row {
     margin-top: 3rem;
 }
@@ -167,8 +189,8 @@ opacity:1;
     position: fixed;
     top: 0;
     bottom: 0;
-    width: 13.755em;
-    right: -13.755em;
+    width: 14.755em;
+    right: -14.755em;
     height: 100%;
     -webkit-transform: translate(0px,0px);
     -moz-transform: translate(0px,0px);
@@ -181,7 +203,7 @@ opacity:1;
     transition: .15s ease;
     z-index: 1000;
 	background-color:#56C3D1;
-	height:400px;
+	height:500px;
 }
 
 
@@ -198,11 +220,11 @@ color:white;
 }
 
 #menu.active {
-    -webkit-transform: translate(-13.755em,0px);
-    -moz-transform: translate(-13.755em,0px);
-    -o-transform: translate(-13.755em,0px);
-    -ms-transform: translate(-13.755em,0px);
-    transform: translate(-13.755em,0px);
+    -webkit-transform: translate(-14.755em,0px);
+    -moz-transform: translate(-14.755em,0px);
+    -o-transform: translate(-14.755em,0px);
+    -ms-transform: translate(-14.755em,0px);
+    transform: translate(-14.755em,0px);
 }
 
 .container {
@@ -218,13 +240,38 @@ color:white;
 }
 
 .container.active {
-    -webkit-transform: translate(-13.725em,0px);
-    -moz-transform: translate(-13.725em,0px);
-    -o-transform: translate(-13.725em,0px);
-    -ms-transform: translate(-13.725em,0px);
-    transform: translate(-13.725em,0px);
+    -webkit-transform: translate(-14.725em,0px);
+    -moz-transform: translate(-14.725em,0px);
+    -o-transform: translate(-14.725em,0px);
+    -ms-transform: translate(-14.725em,0px);
+    transform: translate(-14.725em,0px);
 }
 
+
+#menu li {
+display:block;
+font-size:1.2rem;
+margin:0 0 .3rem 1rem;	
+}
+
+#menu ul {
+margin-top:.9rem;	
+}
+
+#menu > p:first-of-type {
+font-size:1.2rem;	
+font-weight:bold;
+margin-top:3rem;
+}
+
+#menu p {
+margin-left:1rem;	
+}
+
+
+#about {
+margin-top:0;	
+}
 .menu-link {
     position: absolute;
     top: 15px;
@@ -241,6 +288,24 @@ color:white;
     transition: opacity .15s ease;
 }
 
+
+#project-intro img{
+width:40px;
+height:40px;
+	
+}
+#skills-icons li {
+	position:relative;
+}
+#skills-icons .text {
+display:none;
+}
+#skills-icons li:hover .text {
+position:absolute;
+top: 45px;
+left: 0;
+display:block;
+}
 
 /* 5. Misc. */
 
@@ -260,17 +325,17 @@ color:white;
     height: 100%;
     left: 0px;
     top: 0px;
-    background: linear-gradient(to right bottom, #E55E5D 50%, transparent 50%);
+    background: linear-gradient(to right bottom, #E55E5D 25%, transparent 25%);
     position:absolute;
     -webkit-transition: width .2s ease-out .2s; /* For Safari 3.1 to 6.0 */
-    transition: width .2s ease-out .2s;
+    transition: width .1s ease-out .1s;
 }
 
 
 #works div {
-    -moz-transition: all .5s linear;
-    -webkit-transition: all .5s linear;
-    transition: all .5s linear;
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 a:hover {
@@ -310,17 +375,24 @@ footer {
 #project-intro h1 {
     margin: 5rem 0 3rem;
 }
+
+	
+
 }
 
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium and up screens */
 
-.overflow {
-    max-height: 300px;
-    overflow: hidden;
-}
 
 #tall-works-image {
     max-height: 589px;
     overflow: hidden;
 }
 }
+
+@media only screen and (min-width: 64.063em) { 
+.overflow {
+    max-height: 295px;
+    overflow: hidden;
+}
+
+} /* min-width 1025px, large screens */

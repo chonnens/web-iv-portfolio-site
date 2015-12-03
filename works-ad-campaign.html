@@ -8,6 +8,8 @@
 <link href="css/custom.css" rel="stylesheet">
 <link href="css/slick.css" rel="stylesheet" type="text/css">
 <link href="css/slick-theme.css" rel="stylesheet" type="text/css">
+<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200' rel='stylesheet' type='text/css'>
 </head>
 <!--Table of Contents
 
@@ -24,16 +26,29 @@
 
 <!--1. Navigation-->
 
-<nav id="menu"> <a class="menu-link" href="#menu"></a>
-  <ul>
-    <li> <a href="#works" class="sliding-u-l-r">Works</a> </li>
-    <li> <a href="#about" class="sliding-u-l-r">About</a> </li>
-    <li> <a href="#contact" class="sliding-u-l-r">Contact</a> </li>
-  </ul>
-  <p>Hello!</p>
-  <p>My name is Chelsea and I am a print and web designer. Please have a look around and make
+
+  <nav id="menu">
+    <a class="menu-link" href="#menu"></a>
+
+    <ul>
+      <li>
+        <a href="index.html#works" class="sliding-u-l-r">Works</a>
+      </li>
+
+      <li>
+        <a href="index.html#about" class="sliding-u-l-r">About</a>
+      </li>
+
+      <li>
+        <a href="index.html#contact" class="sliding-u-l-r">Contact</a>
+      </li>
+    </ul>
+
+
+    <p>Hello!</p>
+    <p>My name is Chelsea and I am a print and web designer. Please have a look around and make
     yourself at home!</p>
-</nav>
+  </nav>
 <div class="columns medium-4 logo"> <a href="index.html"><img alt="img" src="imgs/logo-small.png"></a> </div>
 <div class="container"><!--holds content that scoots over with navigation--> 
   
@@ -50,12 +65,22 @@
       </div>
       <div class="medium-6 columns text-center">
         <h3>Skills Used</h3>
-        <img alt="img" data-interchange=
-        "[http://placehold.it/75x75, (small)], [http://placehold.it/50x50, (medium)]"> <img alt=
-        "img" data-interchange=
-        "[http://placehold.it/75x75, (small)], [http://placehold.it/50x50, (medium)]"> <img alt=
-        "img" data-interchange=
-        "[http://placehold.it/75x75, (small)], [http://placehold.it/50x50, (medium)]"></div>
+        <ul id="skills-icons">
+        <li><img alt="Hand Lettering" src="imgs/icon-hand-lettering.svg"> 
+        	<span class="text">Hand&nbsp;Lettering</span>
+        </li>
+                <li><img alt="Photography" src="imgs/icon-photography.svg">
+                	<span class="text">Photography</span>
+                </li>
+
+        <li><img alt="Concept" src="imgs/icon-concept-02.svg">
+                        	<span class="text">Concept&nbsp;Ideation</span>
+ </li>
+          <li><img alt="Layout" src="imgs/icon-layout.svg">
+                          	<span class="text">Layout</span>
+ </li>
+			</ul>
+       </div> 
     </div>
   </section>
   
@@ -98,9 +123,15 @@
   <!--4. View Next, Previous, Other-->
   
   <div class="row">
-    <div class="columns small-4 medium-2"> <a class="button previous" href="index.html">Previous</a> </div>
-      <div class="small-4 columns" id="top"> <a href="#project-intro"><img src="imgs/top-button-01.png" alt="img"></a></div>
-    <div class="columns small-4 medium-2  right button-offset"> <a class="button next" href="index.html">View Next</a> </div>
+    <div class="columns small-4 medium-2"> <a class="button previous" href="index.html">Previous</a></div>
+      
+      <div class="small-4  medium-8 columns">
+      <div class="row">
+      	<div class="columns small-centered text-center"><a href="#project-intro"><img src="imgs/top-button-01.png" alt="img" id="top"></a></div>
+      </div>
+      </div>
+  
+    <div class="columns small-4 medium-2 "> <a class="button next" href="index.html">View Next</a> </div>
   </div>
   <section id="viewmore">
     <div class="content row">
@@ -108,19 +139,25 @@
         <h2 class="text-center">View Another Project</h2>
         <div class="slider responsive">
           <div class="small-centered"> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+          "imgs/thumbs/thumb-book.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+              "imgs/thumbs/thumb-packaging.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+              "imgs/thumbs/thumb-report.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+              "imgs/thumbs/thumb-identity.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+              "imgs/thumbs/thumb-social.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+               "imgs/thumbs/thumb-campaign.jpg"></a> </div>
           <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "http://placehold.it/150x150"></a> </div>
+              "imgs/thumbs/thumb-book.jpg"></a> </div>
+              <div> <a href="works-ad-campaign.html"><img alt="img" src=
+              "imgs/thumbs/thumb-report.jpg"></a> </div>
+          <div> <a href="works-ad-campaign.html"><img alt="img" src=
+              "imgs/thumbs/thumb-identity.jpg"></a> </div>
+              <div> <a href="works-ad-campaign.html"><img alt="img" src=
+              "imgs/thumbs/thumb-identity.jpg"></a> </div>
         </div>
       </div>
     </div>
@@ -155,8 +192,10 @@
   </script> 
 <script src="js/vendor/slick.min.js" type="text/javascript">
   </script> 
+<!--foundation-->
+
 <script>
-  <!--Foundation-->
+  
   $(document).foundation();
   $(".menu-link").click(function(){
       $("#menu").toggleClass("active");

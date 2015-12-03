@@ -52,25 +52,23 @@
   <div class="container"><!--holds content that scoots over with navigation-->
 
 
-    <section id="intro">
+    <section id="works">
       <div class="row">
         <div class="small-6 medium-4 columns small-centered"><img alt="img" src=
         "imgs/logo.png">
         </div>
       </div>
-    </section>
     
     
 <!--2. Works-->
 
 
-    <section id="works">
       <div class="row"> 
         <div class="small-6 medium-4 columns base">
           <a href="works-ad-campaign.html"><img alt="img" class="overflow" src=
-          "imgs/works-book.jpg"><div class="triangle"></div></a>
+          "imgs/works-book.jpg"><div class="triangle"></div>
 
-          <p>caption</p>
+          <p>caption</p></a>
         </div>
 
 
@@ -87,17 +85,19 @@
         </div>
 
         <div class="medium-8 columns">
-        	<div class="base">
-          <a href="works-ad-campaign.html"><img alt="img" class="overflow" data-interchange=
-          "[http://placehold.it/620x350, (small)], [imgs/works-packaging.jpg, (medium)]"><div class="triangle"></div></a>
+        	<a href="works-ad-campaign.html"><div class="base">
+          <img alt="img" class="overflow" data-interchange=
+          "[http://placehold.it/620x350, (small)], [imgs/works-packaging.jpg, (medium)]"><div class="triangle"></div>
           </div>
-          <p>caption</p>
+          <p>caption</p></a>
         </div>
 
-        <div class="medium-4 columns base">
+        <div class="medium-4 columns">
+        	<div class="base">
           <a href="works-ad-campaign.html"><img alt="img" class="overflow" data-interchange=
-          "[http://placehold.it/620x550, (small)], [http://placehold.it/400x400, (medium)]"><div class="triangle"></div></a>
-          <p>caption</p>
+          "[http://placehold.it/620x550, (small)], [http://placehold.it/350x345, (medium)]"><div class="triangle"></div>
+         </div>
+          <p>caption</p></a>
         </div>
 
         <div class="medium-6 columns" id="tall-works-image">
@@ -121,7 +121,7 @@
         <div class="small-6 medium-3 columns">
           <a href="works-ad-campaign.html"><img alt="img" class="overflow" src=
           "http://placehold.it/350x350"></a>
-          <p>caption</p>
+          <p class="sliding-u-l-r">caption</p>
         </div>
       </div>
     </section>
@@ -273,13 +273,15 @@
     <!--Smooth Scroll-->
     $(function() {
     $('a[href*=#]:not([href=#])').click(function() {
+   
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
+	  var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top
+          scrollTop: target.offset().top+200
         }, 1000);
+
         return false;
       }
     }
