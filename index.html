@@ -10,6 +10,29 @@
   'stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200'
   rel='stylesheet' type='text/css'>
+  <script type="text/javascript">
+      
+	    <!--//--><![CDATA[//><!--
+            var images = new Array()
+            function preload() {
+                for (i = 0; i < preload.arguments.length; i++) {
+                    images[i] = new Image()
+                    images[i].src = preload.arguments[i]
+                }
+            }
+            preload(
+                "imgs/works-campaign.jpg",
+                "imgs/works-packaging.jpg",
+                "imgs/works-social-activism.jpg"
+                "imgs/works-report.jpg"
+                "imgs/works-web.png"
+                "imgs/works-coming-soon.png"
+
+                "imgs/works-cookbook.jpg"
+                "imgs/works-cookie-logo.jpg"
+            )
+        //--><!]]>
+  </script>
 </head><!--Table of Contents
 
     1. Navigation
@@ -41,7 +64,7 @@
   </nav>
   <div class="container">
     <!--holds content that scoots over with navigation-->
-    <section id="works">
+    <section id="works" style="min-height:1582px;">
       <div class="row">
         <div class="small-6 medium-4 columns small-centered"><img alt=
         "Honnens Design Logo" src="imgs/logo.svg"></div>
@@ -71,7 +94,7 @@
           <a href="annual-report.html">
           <div class="base">
             <img alt="Annual Report" class="overflow" data-interchange=
-            "[imgs/projects/works-report-small.jpg, (small)], [imgs/works-report.jpg, (medium)]">
+            "[imgs/works-report-small.jpg, (small)], [imgs/works-report.jpg, (medium)]">
             <div class="yellowtriangle"></div>
             <p>Annual Report</p>
           </div></a>
@@ -127,10 +150,10 @@
     
     
     <!--3. About-->
-    <section id="about">
+    <section class="p-t-xl">
       <div class="row">
         <div class="columns text-center">
-          <h1>A LITTLE ABOUT ME</h1>
+          <h1 id="about">A LITTLE ABOUT ME</h1>
         </div>
       </div>
       <div class="row">
@@ -176,10 +199,10 @@
     
     
     <!--4. Contact-->
-    <section id="contact">
+    <section class="p-t-xl">
       <div class="row">
         <div class="columns text-center">
-          <h1>LET&rsquo;S GET IN TOUCH</h1>
+          <h1 id="contact">LET&rsquo;S GET IN TOUCH</h1>
         </div>
         <div class="small-centered small-12 large-10 columns">
           <form>
@@ -268,7 +291,7 @@
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
-          scrollTop: target.offset().top+200
+          scrollTop: target.offset().top+0
         }, 1000);
 
         return false;
@@ -277,28 +300,6 @@
     });
     });
   </script> 
-  <script type="text/javascript">
-      
-	    <!--//--><![CDATA[//><!--
-            var images = new Array()
-            function preload() {
-                for (i = 0; i < preload.arguments.length; i++) {
-                    images[i] = new Image()
-                    images[i].src = preload.arguments[i]
-                }
-            }
-            preload(
-                "imgs/works-campaign.jpg",
-                "imgs/works-packaging.jpg",
-                "imgs/works-social-activism.jpg"
-                "imgs/works-report.jpg"
-                "imgs/works-web.png"
-                "imgs/works-coming-soon.png"
-
-                "imgs/works-cookbook.jpg"
-                "imgs/works-cookie-logo.jpg"
-            )
-        //--><!]]>
-  </script>
+  
 </body>
 </html>
