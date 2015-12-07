@@ -56,6 +56,9 @@ footer, h2, h3, h1 {
 color:#56C3D1;
 }
 
+.next:hover, .previous:hover {
+color:#E55E5D;	
+}
 
 /* 2. Alignment */
 
@@ -446,11 +449,18 @@ font-size:1.5rem;
 @media only screen and (min-width: 40.063em) and (max-width: 64em) { 
 
 .previous {
-margin-left:35px;	
+margin-left:25px;	
+}
+.next {
+margin-left:-25px;	
 }
 
-.next {
-margin-right:35px;	
+p {
+    font-size: .825rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:200;
+	color:#808285;
+	line-height:1.3rem;
 }
 
 } 
@@ -465,6 +475,10 @@ margin-right:35px;
 .overflow {
     max-height: 295px;
     overflow: hidden;
+}
+
+.next {
+margin-left:25px;	
 }
 
 } /* min-width 1025px, large screens */

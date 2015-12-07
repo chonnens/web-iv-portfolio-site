@@ -1335,7 +1335,9 @@ a {
   line-height: inherit;
   text-decoration: none; }
   a:hover, a:focus {
-    color: #E55E5D; }
+    color: white; }
+	
+	
   a img {
     border: none; }
 
