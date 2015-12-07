@@ -108,7 +108,7 @@ footer,#intro div img,#works>div,#project-intro h1 {
 content:url(../imgs/next-arrows.svg);
   position: absolute;
   top: 40%;
-  left: 110px;
+  left: 80px;
   margin-top: -14px;
     width:40px;
 
@@ -145,6 +145,12 @@ font-family: 'Work Sans', sans-serif;
 	font-weight:300;	
 }
 
+
+#contact .button  {
+  background-color:#E55E5D;
+  color:white;
+	
+}
 ul {
     margin: 0;
 }
@@ -423,12 +429,32 @@ p {
 	line-height:1.3rem;
 }
 
+.previous {
+margin-left:17px;	
+}
+
+.next {
+margin-right:17px;	
+}
+
 h1 {
 font-size:1.5rem;	
 }
-	
-
 }
+	
+	/* medium only */
+@media only screen and (min-width: 40.063em) and (max-width: 64em) { 
+
+.previous {
+margin-left:35px;	
+}
+
+.next {
+margin-right:35px;	
+}
+
+} 
+
 
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium and up screens */
 

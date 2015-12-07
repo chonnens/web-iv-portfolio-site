@@ -95,9 +95,9 @@
     </div>
     <div class="row">
       <div class="columns medium-4"><img alt="img" src="imgs/projects/ad-campaign/mailman.jpg"> </div>
-      <div class="columns medium-4" id="small-screen-top-margin"><img alt="img" src=
+      <div class="columns medium-4 small-screen-top"><img alt="img" src=
         "imgs/projects/ad-campaign/vet.jpg"> </div>
-         <div class="columns medium-4" id="small-screen-top-margin"><img alt="img" src=
+         <div class="columns medium-4 small-screen-top"><img alt="img" src=
         "imgs/projects/ad-campaign/fireman.jpg"> </div>
       <div class="columns medium-8 left">
         <h3>My Favorite Part:</h3>
@@ -108,7 +108,7 @@
     </div>
     <div class="row">
       <div class="columns medium-5"><img alt="img" src="imgs/projects/ad-campaign/small-campaign.jpg"> </div>
-       <div class="columns medium-7" id="small-screen-top-margin"><img alt="img" src=
+       <div class="columns medium-7 small-screen-top"><img alt="img" src=
         "imgs/projects/ad-campaign/online.jpg"> </div>
       <div class="columns medium-8 left">
         <h3>What Challenged Me:</h3>
@@ -123,7 +123,7 @@
   <!--4. View Next, Previous, Other-->
   
   <div class="row">
-    <div class="columns small-4 medium-2"> <a class="button previous" href="index.html">Previous</a></div>
+    <div class="columns small-4 medium-2"> <a class="button previous" href="packaging.html">Previous</a></div>
       
       <div class="small-4  medium-8 columns">
       <div class="row">
@@ -131,33 +131,48 @@
       </div>
       </div>
   
-    <div class="columns small-4 medium-2 "> <a class="button next" href="index.html">View Next</a> </div>
+    <div class="columns small-4 medium-2 "> <a class="button next right" href="cookbook.html">Next</a> </div>
   </div>
   <section id="viewmore">
     <div class="content row">
       <div class="columns small-10 medium-8 small-centered">
         <h2 class="text-center">View Another Project</h2>
         <div class="slider responsive">
-          <div class="small-centered"> <a href="works-ad-campaign.html"><img alt="img" src=
+     
+         
+      
+               <div class="small-centered"> <a href="book.html"><img alt="img" src=
           "imgs/thumbs/thumb-book.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "imgs/thumbs/thumb-packaging.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "imgs/thumbs/thumb-report.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "imgs/thumbs/thumb-identity.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
+          
+          <div> <a href="social-activism.html"><img alt="img" src=
               "imgs/thumbs/thumb-social.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
-               "imgs/thumbs/thumb-campaign.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "imgs/thumbs/thumb-book.jpg"></a> </div>
-              <div> <a href="works-ad-campaign.html"><img alt="img" src=
+          
+          <div> <a href="cookbook.html"><img alt="img" src=
+               "imgs/thumbs/thumb-cookbook.jpg"></a> </div>
+               
+                 <div> <a href="annual-report.html"><img alt="img" src=
               "imgs/thumbs/thumb-report.jpg"></a> </div>
-          <div> <a href="works-ad-campaign.html"><img alt="img" src=
+               
+            
+          
+         <div> <a href="identity-system.html"><img alt="img" src=
               "imgs/thumbs/thumb-identity.jpg"></a> </div>
-              <div> <a href="works-ad-campaign.html"><img alt="img" src=
-              "imgs/thumbs/thumb-identity.jpg"></a> </div>
+          
+          <div> <a href="packaging.html"><img alt="img" src=
+              "imgs/thumbs/thumb-packaging.jpg"></a> </div>
+              
+              <div class="small-centered"> <a href="book.html"><img alt="img" src=
+          "imgs/thumbs/thumb-book.jpg"></a> </div>
+              
+          <div> <a href="social-activism.html"><img alt="img" src=
+              "imgs/thumbs/thumb-social.jpg"></a> </div>
+          
+          <div> <a href="cookbook.html"><img alt="img" src=
+               "imgs/thumbs/thumb-cookbook.jpg"></a> </div>
+                 
+          <div> <a href="annual-report.html"><img alt="img" src=
+              "imgs/thumbs/thumb-report.jpg"></a> </div>
+               
         </div>
       </div>
     </div>
@@ -172,9 +187,9 @@
     <div class="columns medium-6 small-only-text-center"> <a href="mailto:chelseahonnens@gmail.com" class="sliding-u-l-r">chelseahonnens@gmail.com</a> </div>
     <div class="columns medium-6">
       <ul class="small-only-text-center medium-text-right">
-        <li> <a href="#works" class="sliding-u-l-r">works</a> </li>
-        <li> <a href="#about" class="sliding-u-l-r">about</a> </li>
-        <li> <a href="#contact" class="sliding-u-l-r">contact</a> </li>
+        <li> <a href="index.html#works" class="sliding-u-l-r">works</a> </li>
+        <li> <a href="index.html#about" class="sliding-u-l-r">about</a> </li>
+        <li> <a href="index.html#contact" class="sliding-u-l-r">contact</a> </li>
       </ul>
     </div>
   </div>
@@ -250,20 +265,22 @@
   </script> 
 <script>
   <!--Smooth Scroll-->
-  $(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
+   $(function() {
+    $('a[href*=#]:not([href=#menu])').click(function() {
+   
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
+	  var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html,body').animate({
           scrollTop: target.offset().top
         }, 1000);
+
         return false;
       }
     }
-  });
-  });
+    });
+    });
   </script>
 </body>
 </html>
