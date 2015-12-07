@@ -20,9 +20,7 @@
 
 }
 
-#works a:hover p {
-border-bottom:2px solid red;
-}
+
 
 
 p {
@@ -77,9 +75,7 @@ h1, h2, h3  {
 	
 }
 
-#works {
-margin-bottom:12rem;	
-}
+
 #skills div,#viewmore .row {
     margin-top: 3rem;
 }
@@ -269,6 +265,9 @@ margin-left:1rem;
 }
 
 
+.margin-top{
+margin-top:1rem;	
+}
 #about {
 margin-top:0;	
 }
@@ -278,9 +277,9 @@ margin-top:0;
     left: -50px;
     height: 35px;
     width: 35px;
-    background:url(../imgs/nav-button.png);
+    background:url(../imgs/nav-button.svg);
     background-position: center center;
-    background-size: 29px;
+    background-size: 35px;
     opacity: .9;
     -webkit-transition: opacity .15s ease;
     -moz-transition: opacity .15s ease;
@@ -302,7 +301,7 @@ display:none;
 }
 #skills-icons li:hover .text {
 position:absolute;
-top: 45px;
+top: 40px;
 left: 0;
 display:block;
 }
@@ -316,7 +315,7 @@ display:block;
 }
 
 
-.triangle {
+.triangle, .bluetriangle, .yellowtriangle {
   width:0;
 }
 
@@ -332,14 +331,55 @@ display:block;
 }
 
 
+.base:hover .bluetriangle {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to right bottom, #56C3D1 30%, transparent 0%);
+    position:absolute;
+      -webkit-transition: width .2s ease-out .2s; /* For Safari 3.1 to 6.0 */
+    transition: width .1s ease-out .1s;
+}
+
+.base:hover .yellowtriangle {
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background: linear-gradient(to right bottom, #FEE757 25%, transparent 25%);
+    position:absolute;
+    -webkit-transition: width .2s ease-out .2s; /* For Safari 3.1 to 6.0 */
+    transition: width .1s ease-out .1s;
+}
+
+.red a:hover p{
+	padding-bottom:2px;
+border-bottom:3px solid #E55E5D;
+}
+
+.blue a:hover p{
+	padding-bottom:2px;
+border-bottom:3px solid #56C3D1;
+}
+
+.yellow a:hover p{
+	padding-bottom:2px;
+border-bottom:3px solid #FEE757;
+}
+
 #works div {
     -moz-transition: all .3s linear;
     -webkit-transition: all .3s linear;
     transition: all .3s linear;
 }
 
+#works a:hover img, #viewmore a:hover img {
+    opacity: .3;
+}
+
 a:hover {
-    opacity: .5;
+opacity:.3;	
 }
 
 .logo {
@@ -375,7 +415,17 @@ footer {
 #project-intro h1 {
     margin: 5rem 0 3rem;
 }
+p {
+    font-size: .75rem;
+	font-family: 'Work Sans', sans-serif;
+	font-weight:200;
+	color:#808285;
+	line-height:1.3rem;
+}
 
+h1 {
+font-size:1.5rem;	
+}
 	
 
 }
@@ -383,10 +433,6 @@ footer {
 @media only screen and (min-width: 40.063em) { /* min-width 641px, medium and up screens */
 
 
-#tall-works-image {
-    max-height: 589px;
-    overflow: hidden;
-}
 }
 
 @media only screen and (min-width: 64.063em) { 
