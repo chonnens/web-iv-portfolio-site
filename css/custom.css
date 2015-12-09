@@ -33,7 +33,7 @@ h1 {
 	font-weight: 700;
 }
 
-#about h1, #contact h1 {
+.p-t-xl h1 {
 	margin: 0rem 0 3rem;
 }
 
@@ -74,8 +74,12 @@ footer, h2, h2, h1, #viewmore p {
 }
 
 h2 {
-margin-top:20px;	
 font-size:1.5rem;
+}
+
+#about-project h2 {
+	margin-top:20px;	
+
 }
 
 footer a {
@@ -94,7 +98,7 @@ text-align:right;
 /* 2. Alignment */
 
 .p-t-xl {
-	padding-top:300px;
+	padding-top:200px;
 }
 #skills div, #viewmore .row {
 	margin-top: 3rem;
@@ -376,7 +380,7 @@ float:right;
 	background: linear-gradient(to right bottom, #E55E5D 25%, transparent 25%);
 	position: absolute;
 	-webkit-transition: width .2s ease-out .2s; /* For Safari 3.1 to 6.0 */
-	transition: width .1s ease-out .1s;
+	transition: width .25s ease-out .25s;
 }
 
 base:hover .triangle {
@@ -412,9 +416,13 @@ base:hover .triangle {
 	transition: all .3s linear;
 }
 
-#works a:hover img, #viewmore img:hover, #works img:hover:not(.no-opacity), #top:hover, .menu-link:hover, .logo:hover {
+#works a:hover img, #viewmore img:hover, #works img:hover:not(.no-opacity), #top:hover, .menu-link:hover, .logo:hover, .button:hover {
 	opacity: .3;
+	 transition: opacity .25s ease-in-out;
+   -moz-transition: opacity .25s ease-in-out;
+   -webkit-transition: opacity .25s ease-in-out;
 }
+
 
 
 
@@ -579,6 +587,14 @@ line-height:3.2rem;
 }
 } 
 
+/* xlarge and up */
+@media only screen and (min-width: 80em) {
+#about-project {
+margin-top:6rem;	
+}
+
+
+}
 
 /* for IE 10 only */
 
