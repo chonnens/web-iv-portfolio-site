@@ -30,8 +30,11 @@
 }
 
 h1 {
-	margin: 0rem 0 3rem;
 	font-weight: 700;
+}
+
+#about h1, #contact h1 {
+	margin: 0rem 0 3rem;
 }
 
 h1, h2, h2, #viewmore p {
@@ -105,12 +108,21 @@ text-align:right;
 	margin-top: 1rem;
 }
 
-footer, #intro div img, #works>div, #project-intro h1 {
+footer, #intro div img, #works>div {
 	margin-top: 7.5rem;
 }
 
 #about-project p {
 	margin-bottom: 5rem;
+}
+
+#project-intro div:first-child {
+	clear:both;
+}
+
+
+#project-intro p {
+font-size:1.2rem;	
 }
 
 #project-intro div:not(:first-child) {
@@ -134,7 +146,9 @@ footer, #intro div img, #works>div, #project-intro h1 {
 }
 
 
-
+.above-project div {
+	margin:5rem 0 5rem 0;
+}
 
 .button.next {
 	padding: 1rem 2rem 1.0625rem 0;
@@ -318,6 +332,13 @@ footer li:not(:first-child) {
 	position: relative;
 }
 
+#about-project {
+margin-top:3rem;	
+}
+
+#skills-icons, #project-intro h2 {
+float:right;	
+}
 #skills-icons .text {
 	display: none;
 }
@@ -441,7 +462,7 @@ footer {
 }
 
 #skills-icons li {
-min-width:26%;	
+min-width:20%;	
 }
 /* typography */
 
@@ -454,7 +475,11 @@ p {
 }
 
 h1 {
-	font-size: 1.5rem;
+	font-size: 2rem;
+}
+
+h2 {
+font-size:1.3rem;	
 }
 
 
@@ -464,10 +489,6 @@ footer {
 	height: 100px;
 }
 
-#project-intro h1 {
-	margin: 5rem 0 3rem;
-}
-
 #top {
 	width: 50px;
 	margin-top: 0px;
@@ -475,7 +496,7 @@ footer {
 }
 
 
-@media only screen and (max-width: 63em) { 
+@media only screen and (max-width: 64em) { 
 
 #skills-icons .text {
 display:block;
@@ -491,6 +512,21 @@ p, span, label {
 	color: #808285;
 	font-weight: 300;
 }
+
+
+#skills-icons, #project-intro h2, #project-intro h1, #project-intro p {
+float:none;
+text-align:center;	
+}
+
+.titles {
+text-align:center;	
+margin-top:2rem;
+}
+#about-project{
+margin-top:1rem;	
+}
+
 }
 /* medium only */
 @media only screen and (min-width: 40.063em) and (max-width: 64em) {
@@ -514,6 +550,7 @@ p {
 #skills-icons li {
 min-width:16%;	
 }
+
 }
 
 /* large and up */
@@ -530,6 +567,15 @@ min-width:16%;
 
 .next {
 	margin-right: 25px;
+}
+
+
+#project-intro div {
+	margin-top:5rem;
+}
+
+h1 {
+line-height:3.2rem;	
 }
 } 
 
