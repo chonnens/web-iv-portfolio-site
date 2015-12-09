@@ -1,0 +1,12 @@
+@charset "UTF-8";
+/* CSS Document */
+
+.previous:before {
+	content: url(../imgs/previous-arrows.svg);
+	left: -20px;
+	top:-35px;
+}
+
+body {
+color:red;	
+}

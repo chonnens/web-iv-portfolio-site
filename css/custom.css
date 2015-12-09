@@ -91,7 +91,7 @@ text-align:right;
 /* 2. Alignment */
 
 .p-t-xl {
-	padding-top:200px;
+	padding-top:300px;
 }
 #skills div, #viewmore .row {
 	margin-top: 3rem;
@@ -132,6 +132,10 @@ footer, #intro div img, #works>div, #project-intro h1 {
 	content: url(../imgs/next-arrows.svg);
 	left: 50px;
 }
+
+
+
+
 .button.next {
 	padding: 1rem 2rem 1.0625rem 0;
 }
@@ -139,6 +143,8 @@ footer, #intro div img, #works>div, #project-intro h1 {
 	content: url(../imgs/previous-arrows.svg);
 	left: -20px;
 }
+
+
 
 .icon {
 	width: 125px;
@@ -150,6 +156,10 @@ footer, #intro div img, #works>div, #project-intro h1 {
 
 .margin-top {
 	margin-top: 2rem;
+}
+
+.xl-margin-top {
+	margin-top: 7rem;
 }
 
 #about {
@@ -381,7 +391,7 @@ base:hover .triangle {
 	transition: all .3s linear;
 }
 
-#works a:hover img, #viewmore a:hover img, a:hover {
+#works a:hover img, #viewmore img:hover, #works img:hover:not(.no-opacity), #top:hover, .menu-link:hover, .logo:hover {
 	opacity: .3;
 }
 
@@ -522,3 +532,14 @@ min-width:16%;
 	margin-right: 25px;
 }
 } 
+
+
+/* for IE 10 only */
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+.previous:before, .next:after  {
+	
+	top:-35px;
+}
+
+}
