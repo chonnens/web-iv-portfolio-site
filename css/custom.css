@@ -20,6 +20,14 @@
 /* 1. Typography */
 
 
+
+* {
+    margin: 0;
+}
+html, body {
+    height: 100%;
+}
+
 #works a p {    /* Makes Hover only go under the word */
 	display: inline;
 }
@@ -172,12 +180,16 @@ font-size:1.2rem;
 	margin-left: -20px;
 }
 
-.margin-top {
-	margin-top: 2rem;
-}
 
 .xl-margin-top {
 	margin-top: 7rem;
+}
+
+l-m-t {
+margin-top:5rem;	
+}
+.above-logo {
+padding-top:7rem;	
 }
 
 #about {
@@ -416,7 +428,7 @@ base:hover .triangle {
 	transition: all .3s linear;
 }
 
-#works a:hover img, #viewmore img:hover, #works img:hover:not(.no-opacity), #top:hover, .menu-link:hover, .logo:hover, .button:hover {
+#works a:hover img, #viewmore img:hover, #works img:hover:not(.no-opacity), #top:hover, .menu-link:hover, .logo:hover, .button:hover, .above-logo img:hover {
 	opacity: .3;
 	 transition: opacity .25s ease-in-out;
    -moz-transition: opacity .25s ease-in-out;
@@ -442,9 +454,17 @@ footer {
 	height: 60px;
 	padding-top: 15px;
 	background-color: #56C3D1;
+	
 }
 
 
+
+#sticky {
+position:fixed;
+bottom:0;
+width:100%;	
+margin-top:0;
+}
 
 /* 8. Media Queries */
 
@@ -452,6 +472,9 @@ footer {
 @media only screen and (max-width: 40em) { 
 
 /* alignment */
+#works {
+min-height:2352px;
+}
 
 #annual-report {
 	margin-top: 1.6rem;
@@ -559,6 +582,10 @@ p {
 min-width:16%;	
 }
 
+#works {
+min-height:982px;
+}
+
 }
 
 /* large and up */
@@ -584,6 +611,10 @@ min-width:16%;
 
 h1 {
 line-height:3.2rem;	
+}
+
+#works {
+min-height:1282px;
 }
 } 
 

@@ -11,7 +11,7 @@
   'stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200'
   rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="imgs/Favicon-H.svg">
+    <link rel="icon" type="image/png" href="imgs/Favicon-H.png">
 
 </head><!--Table of Contents
 
@@ -50,7 +50,7 @@
       </div>
       
       
-      <!--2. Works-->    <section id="works" style="min-height:1282px;">
+      <!--2. Works-->    <section id="works">
 
       <div class="row">
         <div class="small-6 medium-4 columns red">
@@ -114,8 +114,8 @@
         <div class="small-6 medium-3 columns yellow">
           <a href="identity-system.html">
           <div class="base">
-            <img alt="Identity System" class="overflow" src=
-            "imgs/works-cookie-logo.png">
+            <img alt="Identity System"class="overflow"
+            data-interchange="[imgs/works-cookie-logo-small.png, (small)], [imgs/works-cookie-logo.png, (medium)]">
             <div class="yellowtriangle"></div>
             <p>Identity System</p>
           </div></a>
@@ -185,15 +185,16 @@
           <h1 id="contact">LET&rsquo;S GET IN TOUCH</h1>
         </div>
         <div class="small-centered small-12 large-10 columns">
-          <form>
-            <div class="medium-6 columns">
+			 <form method="post" action="php/contactengine.php">
+             <div class="medium-6 columns">
               <div class="columns">
-                <label for="Name">Your Name</label> <input id="Name" name=
-                "Name" type="text">
+                <label for="Name">Your Name</label> 
+                
+                <input id="Name" name="Name" type="text" required>
+
               </div>
               <div class="columns">
-                <label for="Email">Your Email</label> <input id="Email" name=
-                "Email" type="email">
+                <label for="Email">Your Email</label> <input id="Email" name="Email" type="email" required>
               </div><br>
               <div class="columns">
                 <label for="Referral">How did you hear about me?</label>
@@ -202,20 +203,19 @@
             </div>
             <div class="medium-6 columns">
               <div class="columns">
-                <label for="Message">Your Message</label> 
+                <label for="Message"  required>Your Message</label> 
                 <textarea class="message-box" id="Message" name="Message">
 </textarea>
               </div><br>
               <div class="columns">
-                <input class="right button" name="submit" type="submit" value=
-                "send">
+                <input class="right button" name="submit" type="submit" value="send">
               </div>
             </div>
           </form>
         </div>
       </div>
     </section>
-  </div><!-- end container div -->
+      </div><!-- end container div -->
   
   
   <!--5. Footer-->
