@@ -2,25 +2,21 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <title>Honnens Design</title>
   <link href="../css/normalize.css" rel="stylesheet">
   <link href="../css/foundation.css" rel="stylesheet">
   <link href="../css/custom.css" rel="stylesheet">
-  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel=
-  'stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200'
-  rel='stylesheet' type='text/css'>
-    <link rel="icon" type="image/png" href="../imgs/Favicon-H.png">
-
+  <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type=
+  'text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,200' rel='stylesheet' type=
+  'text/css'>
+  <link href="../imgs/Favicon-H.png" rel="icon" type="image/png">
 </head><!--Table of Contents
 
     1. Navigation
-    2. Works
-    3. About
-    4. Contact
-    5. Footer
-    6. Scripts
+    2. Footer
+    3. Scripts
 
 -->
 <body>
@@ -39,29 +35,28 @@
       </li>
     </ul>
     <p>Hello!</p>
-    <p>My name is Chelsea and I am a print and web designer. Please have a look
-    around and make yourself at home!</p>
+    <p>My name is Chelsea and I am a print and web designer. Please have a look around and make
+    yourself at home!</p>
   </nav>
   <div class="container">
     <!--holds content that scoots over with navigation-->
-      <div class="row above-logo">
-        <div class="small-6 medium-4 columns small-centered"><a href="../index.html"><img alt=
-        "Honnens Design Logo" src="../imgs/logo.svg"></a></div>
+    <div class="row above-logo">
+      <div class="small-6 medium-4 columns small-centered">
+        <a href="../index.html"><img alt="Honnens Design Logo" src="../imgs/logo.svg"></a>
       </div>
-      
-      <div class="row small-centered above-logo">
-   <h1 class="text-center l-m-t">Thanks!</h1>
-   <p class="text-center">Your message has been received.</p>
-   </div>
+    </div>
+    <div class="row small-centered above-logo">
+      <h1 class="text-center l-m-t">Thanks!</h1>
+      <p class="text-center">Your message has been received.</p>
+    </div>
   </div><!-- end container div -->
-  
-  
-  <!--5. Footer-->
+ 
+ 
+  <!--2. Footer-->
   <footer id="sticky">
     <div class="row">
       <div class="columns medium-6 small-only-text-center">
-        <a class="sliding-u-l-r" href=
-        "mailto:hello@honnensdesign.com">hello@honnensdesign.com</a>
+        <a class="sliding-u-l-r" href="mailto:hello@honnensdesign.com">hello@honnensdesign.com</a>
       </div>
       <div class="columns medium-6">
         <ul class="small-only-text-center medium-text-right">
@@ -80,7 +75,7 @@
   </footer>
   
   
-  <!--6. Scripts-->
+  <!--3. Scripts-->
   <script src="../js/vendor/modernizr.js">
   </script> 
   <script src="../js/vendor/jquery.js">
@@ -91,7 +86,7 @@
   </script> 
   <script>
     
-	<!--Foundation-->
+    <!--Foundation-->
     $(document).foundation();
     $(".menu-link").click(function(){
       $("#menu").toggleClass("active");
@@ -117,7 +112,6 @@
     }
     });
     });
-  </script> 
-  
+  </script>
 </body>
 </html>
