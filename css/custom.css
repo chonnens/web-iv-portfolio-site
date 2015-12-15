@@ -32,11 +32,6 @@ html, body {
 	display: inline;
 }
 
-#top {
-	width: 80px;
-	margin-top: -10px;
-}
-
 h1 {
 	font-weight: 700;
 }
@@ -49,14 +44,17 @@ h1, h2, h2, #viewmore p {
 	font-family: 'Montserrat', sans-serif;
 }
 
-#viewmore p {
+#viewmore p, h2 {
 	font-size: 1.5rem;
 }
 
 p, span, label {
-	font-family: 'Work Sans', sans-serif;
 	color: #808285;
-	font-weight: 200;
+}
+
+footer a, p, span, label {
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 300;
 }
 
 p {
@@ -81,19 +79,10 @@ footer, h2, h2, h1, #viewmore p {
 	color: #56C3D1;
 }
 
-h2 {
-font-size:1.5rem;
+#project-intro p {
+font-size:1.2rem;	
 }
 
-#about-project h2 {
-	margin-top:20px;	
-
-}
-
-footer a {
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 300;
-}
 
 .sliding-u-l-r, .sliding-u-l-r:after, .sliding-u-l-r:active, .sliding-u-l-r:hover, #menu p, form .button {
 	color: white
@@ -106,8 +95,18 @@ text-align:right;
 /* 2. Alignment */
 
 .p-t-xl {
-	padding-top:200px;
+	padding-top:12.5rem;
 }
+
+#viewmore img {
+	padding: .625rem;
+}
+
+.above-logo {
+padding-top:7rem;	
+}
+
+
 #skills div, #viewmore .row {
 	margin-top: 3rem;
 }
@@ -116,16 +115,27 @@ text-align:right;
 	margin-top: 1.6rem;
 }
 
-#skills p, #menu img {
+#skills p, #menu img, #about-project h2  {
 	margin-top: 1rem;
 }
 
-footer, #intro div img, #works>div {
+footer, #intro div img, #works>div, .xl-margin-top {
 	margin-top: 7.5rem;
+}
+
+#about {
+	margin-top: 0;
 }
 
 #about-project p {
 	margin-bottom: 5rem;
+}
+#project-intro div:not(:first-child), #contact p {
+	margin-bottom: 2rem;
+}
+
+.above-project div {
+	margin:5rem 0 5rem 0;
 }
 
 #project-intro div:first-child {
@@ -133,68 +143,14 @@ footer, #intro div img, #works>div {
 }
 
 
-#project-intro p {
-font-size:1.2rem;	
-}
-
-#project-intro div:not(:first-child) {
-	margin-bottom: 2rem;
-}
-
-#viewmore img {
-	padding: 10px;
-}
-
-.next:after, .previous:before {
-	position: absolute;
-	top: 40%;
-	margin-top: -14px;
-	width: 40px;
-}
-
-.next:after {
-	content: url(../imgs/next-arrows.svg);
-	left: 50px;
-}
-
-
-.above-project div {
-	margin:5rem 0 5rem 0;
-}
-
-.button.next {
-	padding: 1rem 2rem 1.0625rem 0;
-}
-.previous:before {
-	content: url(../imgs/previous-arrows.svg);
-	left: -20px;
-}
-
-
-
 .icon {
-	width: 125px;
+	width: 7.8rem;
 }
 
 #intro img { /* Makes logo optically centered */
-	margin-left: -20px;
+	margin-left: -1rem;
 }
 
-
-.xl-margin-top {
-	margin-top: 7rem;
-}
-
-l-m-t {
-margin-top:5rem;	
-}
-.above-logo {
-padding-top:7rem;	
-}
-
-#about {
-	margin-top: 0;
-}
 
 
 
@@ -212,7 +168,7 @@ ul {
 }
 
 footer li:not(:first-child) {
-	margin-left: 30px;
+	margin-left: 1.875rem;
 }
 
 .sliding-u-l-r {
@@ -239,6 +195,31 @@ footer li:not(:first-child) {
 
 
 /* 4. Navigation */
+
+.next:after, .previous:before {
+	position: absolute;
+	top: 40%;
+	margin-top: -14px;
+	width: 40px;
+}
+
+.next:after {
+	content: url(../imgs/next-arrows.svg);
+	left: 50px;
+}
+
+.button.next {
+	padding: 1rem 2rem 1.0625rem 0;
+}
+.previous:before {
+	content: url(../imgs/previous-arrows.svg);
+	left: -20px;
+}
+
+#top {    /* To The Top button */
+	width: 80px;
+	margin-top: -10px;
+}
 
 #menu {
 	position: fixed;
@@ -267,7 +248,7 @@ footer li:not(:first-child) {
 	bottom: 0;
 	left: 0;
 	border-bottom: 120px solid white;
-	border-right: 230px solid #56C3D1;
+	border-right: 240px solid #56C3D1;
 	width: 0;
 }
 
@@ -380,7 +361,7 @@ float:right;
 	position: relative;
 }
 
-.triangle, .bluetriangle, .yellowtriangle {
+.triangle, .bluetriangle, .yellowtriangle{
 	width: 0;
 }
 
@@ -400,7 +381,7 @@ base:hover .triangle {
 }
 
 .base:hover .bluetriangle {
-	background: linear-gradient(to right bottom, #56C3D1 30%, transparent 0%);
+	background: linear-gradient(to right bottom, #56C3D1 25%, transparent 25%);
 }
 
 .base:hover .yellowtriangle {
@@ -476,6 +457,10 @@ margin-top:0;
 min-height:1752px;
 }
 
+
+.gutter {
+margin-top:1rem;	
+}
 #annual-report {
 	margin-top: 1.6rem;
 }
@@ -583,13 +568,21 @@ min-width:16%;
 }
 
 #works {
-min-height:982px;
+min-height:882px;
 }
 
 }
 
+@media only screen and (min-width: 40.063em) {
+
+
+.gutter {
+margin-top:2rem;	
+}
+
+}
 /* large and up */
-@media only screen and (min-width: 64.063em) {
+@media only screen and (min-width: 64em) {
 
 .overflow {
 	max-height: 295px;
